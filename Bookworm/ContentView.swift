@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-// other structs
+// other structs / * *********************************************** */
 struct PushButton: View {
     // Data:
     let title : String
-    @State private var isOn: Bool
+    @State var isOn: Bool
     
+    // array of 2 color choices
     var onColors = [Color.red, Color.yellow]
     var offColors = [Color(white: 0.6), Color(white: 0.4)]
     
@@ -22,6 +23,7 @@ struct PushButton: View {
         }
         .padding()
         .background(
+            // a gradient needs an array of colors :
             LinearGradient(colors: isOn ? onColors : offColors,
                            startPoint: .top,
                            endPoint: .bottom
@@ -29,6 +31,7 @@ struct PushButton: View {
         )
         .foregroundColor(.white)
         .clipShape(Capsule())
+        .shadow(radius: isOn ? 0 : 5)
         
     }
     // methods:
@@ -38,10 +41,16 @@ struct PushButton: View {
 
 struct ContentView: View {
 // MARK: - DATA:
+    @State private var rememberMe = false
     
     var body: some View {
     // MARK: - someVIEW:
-        
+        VStack {
+            
+            PushButton(title: "Remember moi", isOn: rememberMe)
+            Text(rememberMe ? "On" : "Off")
+    
+        }
        
         
     } // end some View
@@ -50,5 +59,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+     ContentView()
+
 }
