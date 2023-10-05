@@ -10,8 +10,8 @@ import SwiftUI
 struct PushButton: View {
     // Data:
     let title : String
-    @State var isOn: Bool
-    
+    // @State var isOn: Bool
+    @Binding var isOn : Bool
     // array of 2 color choices
     var onColors = [Color.red, Color.yellow]
     var offColors = [Color(white: 0.6), Color(white: 0.4)]
@@ -45,13 +45,40 @@ struct ContentView: View {
     
     var body: some View {
     // MARK: - someVIEW:
+        Spacer()
+        
         VStack {
             
-            PushButton(title: "Remember moi", isOn: rememberMe)
+           // PushButton(title: "Remember moi", isOn: rememberMe)
+            PushButton(title: "Remember moi", isOn: $rememberMe)
             Text(rememberMe ? "On" : "Off")
     
         }
+        
+        Spacer()
        
+        Text(
+"""
+BookWorm Project - 100 Days of SwiftUI
+using @Binding for external shared state to update from.
+So the text in the button comes into the View from a separate struct
+and updates according to the ContentView state by passing in this state into
+the @Binding parameter
+"""
+)
+        .padding(.horizontal)
+        HStack{
+            Spacer()
+            NavigationLink("3/10 >", destination: {
+                threeTenView()
+            })
+            .padding(15)
+            .foregroundColor(.white)
+            .background(.blue)
+            
+        }
+        .padding(.horizontal)
+        
         
     } // end some View
     // MARK: - METHODS:
