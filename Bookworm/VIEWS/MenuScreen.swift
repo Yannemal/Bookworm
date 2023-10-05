@@ -46,11 +46,15 @@ struct MenuScreen: View {
                                     .bold()
                                     .font(.system(size: 25))
                                     .foregroundColor(.white)
-                                Text("1/10 @Binding")
+                                Text("@Binding")
                                     .bold()
                                     .font(.system(size: 25))
                                     .foregroundColor(.white)
                                 Spacer() // push to the left
+                                Text("1/10")
+                                    .bold()
+                                    .font(.system(size: 18))
+                                    .foregroundColor(.white)
                             }
                             Rectangle()
                                             .fill(Color.white)
@@ -68,11 +72,17 @@ struct MenuScreen: View {
                                     .bold()
                                     .font(.system(size: 25))
                                     .foregroundColor(.white)
-                                Text("3/10 coreData teaser")
+                                    .opacity(0.5)
+                                
+                                Text("coreData teaser")
                                     .bold()
                                     .font(.system(size: 25))
                                     .foregroundColor(.white)
                                 Spacer() // push to the left
+                                Text("3/10")
+                                    .bold()
+                                    .font(.system(size: 18))
+                                    .foregroundColor(.white)
                             }
                             Rectangle()
                                             .fill(Color.white)
