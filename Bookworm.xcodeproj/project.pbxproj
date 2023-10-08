@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C4BB5C42AD16E5400198C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4BB5C32AD16E5400198C72 /* LaunchScreen.storyboard */; };
+		7C4BB5C62AD16EBC00198C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4BB5C52AD16EBC00198C72 /* Assets.xcassets */; };
 		7C6AB49C2ACE797B00A8D29A /* threeTenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AB49B2ACE797B00A8D29A /* threeTenView.swift */; };
 		7C6AB49E2ACE800200A8D29A /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AB49D2ACE800200A8D29A /* MenuScreen.swift */; };
+		7C96F1592AD17BFD00902E97 /* MyMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96F1582AD17BFD00902E97 /* MyMenuItems.swift */; };
+		7C96F15B2AD1871F00902E97 /* MultiLineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96F15A2AD1871F00902E97 /* MultiLineScreen.swift */; };
+		7C96F15E2AD2F6AE00902E97 /* ContentCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96F15D2AD2F6AE00902E97 /* ContentCoreData.swift */; };
+		7C96F1622AD2F90000902E97 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C96F1602AD2F90000902E97 /* Bookworm.xcdatamodeld */; };
+		7C96F1642AD2FBE300902E97 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96F1632AD2FBE300902E97 /* DataController.swift */; };
 		7CECF15E2ACBDFCE00D6837B /* BookwormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CECF15D2ACBDFCE00D6837B /* BookwormApp.swift */; };
 		7CECF1602ACBDFCE00D6837B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CECF15F2ACBDFCE00D6837B /* ContentView.swift */; };
-		7CECF1622ACBDFCF00D6837B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CECF1612ACBDFCF00D6837B /* Assets.xcassets */; };
 		7CECF1652ACBDFCF00D6837B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CECF1642ACBDFCF00D6837B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C4BB5C32AD16E5400198C72 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C4BB5C52AD16EBC00198C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../SLEnumNavStacker/SLEnumNavStacker/Assets.xcassets; sourceTree = "<group>"; };
 		7C6AB49B2ACE797B00A8D29A /* threeTenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threeTenView.swift; sourceTree = "<group>"; };
 		7C6AB49D2ACE800200A8D29A /* MenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
+		7C96F1582AD17BFD00902E97 /* MyMenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMenuItems.swift; sourceTree = "<group>"; };
+		7C96F15A2AD1871F00902E97 /* MultiLineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineScreen.swift; sourceTree = "<group>"; };
+		7C96F15D2AD2F6AE00902E97 /* ContentCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCoreData.swift; sourceTree = "<group>"; };
+		7C96F1612AD2F90000902E97 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
+		7C96F1632AD2FBE300902E97 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7CECF15A2ACBDFCE00D6837B /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CECF15D2ACBDFCE00D6837B /* BookwormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormApp.swift; sourceTree = "<group>"; };
 		7CECF15F2ACBDFCE00D6837B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7CECF1612ACBDFCF00D6837B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CECF1642ACBDFCF00D6837B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,10 +52,31 @@
 			isa = PBXGroup;
 			children = (
 				7C6AB49D2ACE800200A8D29A /* MenuScreen.swift */,
-				7CECF15F2ACBDFCE00D6837B /* ContentView.swift */,
-				7C6AB49B2ACE797B00A8D29A /* threeTenView.swift */,
+				7C96F15C2AD189C200902E97 /* NavStackScreens */,
+				7C96F1582AD17BFD00902E97 /* MyMenuItems.swift */,
+				7C4BB5C32AD16E5400198C72 /* LaunchScreen.storyboard */,
 			);
 			path = VIEWS;
+			sourceTree = "<group>";
+		};
+		7C96F15C2AD189C200902E97 /* NavStackScreens */ = {
+			isa = PBXGroup;
+			children = (
+				7CECF15F2ACBDFCE00D6837B /* ContentView.swift */,
+				7C96F15A2AD1871F00902E97 /* MultiLineScreen.swift */,
+				7C6AB49B2ACE797B00A8D29A /* threeTenView.swift */,
+				7C96F15D2AD2F6AE00902E97 /* ContentCoreData.swift */,
+			);
+			path = NavStackScreens;
+			sourceTree = "<group>";
+		};
+		7C96F15F2AD2F8BC00902E97 /* DATA */ = {
+			isa = PBXGroup;
+			children = (
+				7C96F1602AD2F90000902E97 /* Bookworm.xcdatamodeld */,
+				7C96F1632AD2FBE300902E97 /* DataController.swift */,
+			);
+			path = DATA;
 			sourceTree = "<group>";
 		};
 		7CECF1512ACBDFCE00D6837B = {
@@ -66,8 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				7CECF15D2ACBDFCE00D6837B /* BookwormApp.swift */,
+				7C96F15F2AD2F8BC00902E97 /* DATA */,
 				7C6AB49A2ACE781000A8D29A /* VIEWS */,
-				7CECF1612ACBDFCF00D6837B /* Assets.xcassets */,
+				7C4BB5C52AD16EBC00198C72 /* Assets.xcassets */,
 				7CECF1632ACBDFCF00D6837B /* Preview Content */,
 			);
 			path = Bookworm;
@@ -139,8 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4BB5C42AD16E5400198C72 /* LaunchScreen.storyboard in Resources */,
 				7CECF1652ACBDFCF00D6837B /* Preview Assets.xcassets in Resources */,
-				7CECF1622ACBDFCF00D6837B /* Assets.xcassets in Resources */,
+				7C4BB5C62AD16EBC00198C72 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +190,11 @@
 				7CECF1602ACBDFCE00D6837B /* ContentView.swift in Sources */,
 				7CECF15E2ACBDFCE00D6837B /* BookwormApp.swift in Sources */,
 				7C6AB49C2ACE797B00A8D29A /* threeTenView.swift in Sources */,
+				7C96F1642AD2FBE300902E97 /* DataController.swift in Sources */,
+				7C96F1592AD17BFD00902E97 /* MyMenuItems.swift in Sources */,
+				7C96F1622AD2F90000902E97 /* Bookworm.xcdatamodeld in Sources */,
+				7C96F15B2AD1871F00902E97 /* MultiLineScreen.swift in Sources */,
+				7C96F15E2AD2F6AE00902E97 /* ContentCoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,9 +331,12 @@
 				DEVELOPMENT_TEAM = 26ZTB6MRV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BookWorm;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,9 +363,12 @@
 				DEVELOPMENT_TEAM = 26ZTB6MRV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BookWorm;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +406,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7C96F1602AD2F90000902E97 /* Bookworm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7C96F1612AD2F90000902E97 /* Bookworm.xcdatamodel */,
+			);
+			currentVersion = 7C96F1612AD2F90000902E97 /* Bookworm.xcdatamodel */;
+			path = Bookworm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7CECF1522ACBDFCE00D6837B /* Project object */;
 }

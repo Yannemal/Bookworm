@@ -51,6 +51,7 @@ struct ContentView: View {
             
            // PushButton(title: "Remember moi", isOn: rememberMe)
             PushButton(title: "Remember moi", isOn: $rememberMe)
+            
             Text(rememberMe ? "On" : "Off")
     
         }
@@ -69,8 +70,8 @@ the @Binding parameter
         .padding(.horizontal)
         HStack{
             Spacer()
-            NavigationLink("3/10 >", destination: {
-                threeTenView()
+            NavigationLink("2/10 >", destination: {
+                MultiLineScreen()
             })
             .padding(15)
             .foregroundColor(.white)

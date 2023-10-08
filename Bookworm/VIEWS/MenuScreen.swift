@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+// MARK: - other structs:
+
+
 
 struct MenuScreen: View {
+
+
 // MARK: - DATA
     let gradient = LinearGradient(colors: [Color.indigo ,Color.black],
                                   startPoint: .top, endPoint: .bottom)
@@ -15,7 +20,7 @@ struct MenuScreen: View {
         // MARK: - someView
         
         NavigationStack {
-            
+           
             ZStack {
                 gradient
                     .opacity(0.45)
@@ -38,58 +43,17 @@ struct MenuScreen: View {
 // main index menu View
                     
                     NavigationLink(destination: ContentView()) {
-                        VStack {
-                            Spacer().frame(width: 0, height: 36.0, alignment: .topLeading)
-                            HStack {
-                                // add image in HStack
-                                Image(systemName: "square.and.pencil")
-                                    .bold()
-                                    .font(.system(size: 25))
-                                    .foregroundColor(.white)
-                                Text("@Binding")
-                                    .bold()
-                                    .font(.system(size: 25))
-                                    .foregroundColor(.white)
-                                Spacer() // push to the left
-                                Text("1/10")
-                                    .bold()
-                                    .font(.system(size: 18))
-                                    .foregroundColor(.white)
-                            }
-                            Rectangle()
-                                            .fill(Color.white)
-                                            .frame(width: UIScreen.main.bounds.width - 60, height: 1)
-                                            .padding(.top, 6.0)
-                        }
+                   MyMenuItems(icon: "square.and.pencil", chapterTitle: "@Binding", chapterNo: "1/10")
                     }
                     
-                    NavigationLink(destination: threeTenView()) {
-                        VStack {
-                            Spacer().frame(width: 0, height: 36.0, alignment: .topLeading)
-                            HStack {
-                                // add image in HStack
-                                Image(systemName: "square.and.pencil")
-                                    .bold()
-                                    .font(.system(size: 25))
-                                    .foregroundColor(.white)
-                                    .opacity(0.5)
-                                
-                                Text("coreData teaser")
-                                    .bold()
-                                    .font(.system(size: 25))
-                                    .foregroundColor(.white)
-                                Spacer() // push to the left
-                                Text("3/10")
-                                    .bold()
-                                    .font(.system(size: 18))
-                                    .foregroundColor(.white)
-                            }
-                            Rectangle()
-                                            .fill(Color.white)
-                                            .frame(width: UIScreen.main.bounds.width - 60, height: 1)
-                                            .padding(.top, 6.0)
-                        }
+                    NavigationLink(destination: MultiLineScreen()) {
+                        MyMenuItems(icon: "square.and.pencil", chapterTitle: "Multi-line editor", chapterNo: "2/10")
                     }
+                    
+                    NavigationLink(destination: ContentCoreData()) {
+                        MyMenuItems(icon: "square.and.pencil", chapterTitle: "coreData Teaser", chapterNo: "3/10")
+                    }
+                    
                     
                     Spacer()
                 } // VStack 2

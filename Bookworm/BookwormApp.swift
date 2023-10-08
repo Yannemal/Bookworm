@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct BookwormApp: App {
+    // DATA:
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
             MenuScreen()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
