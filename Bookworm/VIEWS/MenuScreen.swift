@@ -51,9 +51,12 @@ struct MenuScreen: View {
                     }
                     
                     NavigationLink(destination: ContentCoreData()) {
-                        MyMenuItems(icon: "square.and.pencil", chapterTitle: "coreData Teaser", chapterNo: "3/10")
+                        MyMenuItems(icon: "square.and.pencil", chapterTitle: "coreData BookWorm", chapterNo: "3/10")
                     }
                     
+                    NavigationLink(destination: AddBookView()) {
+                        MyMenuItems(icon: "book", chapterTitle: "add a book", chapterNo: "4/10")
+                    }
                     
                     Spacer()
                 } // VStack 2
