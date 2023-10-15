@@ -13,7 +13,9 @@ import SwiftUI
 struct ContentCoreData: View {
 // DATA:
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var books: FetchedResults<Book>
+    @FetchRequest(sortDescriptors: [
+        SortDescriptor(\.title)
+    ]) var books: FetchedResults<Book>
     
     @State private var showingAddScreen = false
     
@@ -25,10 +27,12 @@ struct ContentCoreData: View {
                 ForEach(books) { book in
                 // build a link:
                     NavigationLink {
-                        Text(book.title ?? "Unknown Title")
-                        // nil coalesce '??' everything w CoreData
+                        DetailView(book: book)
+                        // for each book of type book defined in CoreData
+                        // create <customButton called Navigation Link >
                     } label: {
                         HStack {
+                            // UI NavLinkButton design for EachRow: 
                             EmojiRatingView(rating: book.rating)
                                 .font(.largeTitle)
                             
@@ -42,9 +46,16 @@ struct ContentCoreData: View {
                         }
                     }
                 }
+                .onDelete(perform: deleteBooks)
+                
             }
+            // navStack Modifiers
                 .navigationTitle("BookWorm")
                 .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        EditButton()
+                    }
+                    
                     ToolbarItem(placement: .topBarTrailing) {
                         Button {
                             showingAddScreen.toggle()
@@ -58,8 +69,21 @@ struct ContentCoreData: View {
                 }
                 
         } // end NavStack
-    }
+    } // end someView
+    
  // METHODS:
+    func deleteBooks(at offsets: IndexSet) {
+        for offset in offsets {
+            // find offsetRow in books
+            let book = books[offset]
+            // delete entity in CoreData:
+            moc.delete(book)
+            
+        }
+        // save change to CoreData
+        try? moc.save()
+    }
+    
     
 }
 

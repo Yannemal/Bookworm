@@ -27,6 +27,7 @@ struct MyMenuItems: View {
                     .bold()
                     .font(.system(size: 25))
                     .foregroundColor(.white)
+                // not very good on a white background in Previews Light Mode
                 Spacer() // push to the left
                 Text(chapterNo)
                     .bold()

@@ -55,6 +55,6 @@ struct RatingView: View {
 
 
 #Preview {
-    RatingView(rating: .constant(3))
+    RatingView(rating: .constant(2))
 }
 

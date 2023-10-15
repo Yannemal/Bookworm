@@ -1,8 +1,8 @@
 //
 //  EmojiRatingView.swift
 //  Bookworm
-//
-//  Created by yann guyt on 10/10/2023.
+//  100DaysOfSwiftUI by @TwoStraws
+//  Created by yannemal on 10/10/2023.
 //
 
 import SwiftUI
@@ -30,5 +30,5 @@ struct EmojiRatingView: View {
 }
 
 #Preview {
-    EmojiRatingView(rating: 3)
+    EmojiRatingView(rating: 4)
 }
